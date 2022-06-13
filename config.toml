@@ -1,0 +1,131 @@
+## Basic Configuration
+baseURL = 'http://RdEl00.github.io/'
+languageCode = 'en-us'
+title = 'Reda Elasli'
+theme = "hello-friend-ng"
+googleAnalytics = "G-6QGK9T6S75"
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+themesDir    = "themes"
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Finance, Data & Tech"
+  
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = false
+  
+  enableRobotsTXT = true
+  
+  # Show reading time in minutes for posts
+  showReadingTime = true
+  
+  showMenuItems = 2
+  
+  # Metadata mostly used in document's head
+  description = "My personal website"
+  keywords = "homepage, blog"
+  images = [""]
+  
+  
+
+  
+  enableThemeToggle = true
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  # Colors for favicons
+  ##1b1c1d
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+    
+
+
+
+  [params.footer]
+    trademark = true
+    rss = false
+    copyright = false
+    author = false
+    
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    logoCursorColor    = "#3080A0"
+
+  # Portrait on the home page
+    [params.portrait]
+      #path     = "img/portrait.jpeg"
+      #alt      = "Portrait"
+      #maxWidth = "285px"
+
+  #Social icons
+  [[params.social]]
+    name = "email"
+    url  = "mailto:elaslireda35@gmail.com"
+
+  [[params.social]]
+   # name = "linkedin"
+    #url  = ""
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/RdEl00"
+
+[languages]
+  [languages.en]
+    subtitle  = "My personal website"
+    weight    = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+[menu]
+  #[[menu.main]]
+    #identifier = "about"
+    #name       = "About"
+    #url        = "about/"
+  [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    #url        = "projects/"
+    url        = "https://github.com/RdEl00"
+ # [[menu.main]]
+    #identifier = "Resume"
+    #name       = "Resume"
+    #url        = "resume.pdf"
+
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "posts/"
+    
+  [markup.goldmark.renderer]
+    unsafe= true
