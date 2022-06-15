@@ -117,10 +117,10 @@ themesDir    = "themes"
     name       = "Projects"
     #url        = "projects/"
     url        = "https://github.com/RdEl00"
- # [[menu.main]]
-    #identifier = "Resume"
-    #name       = "Resume"
-    #url        = "resume.pdf"
+ [[menu.main]]
+    identifier = "Resume"
+    name       = "Resume"
+    url        = "resume.pdf"
 
   [[menu.main]]
     identifier = "posts"
