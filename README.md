@@ -77,7 +77,9 @@ paginate     = 10
 
 ## Website...[HUGO](https://gohugo.io/) ?
 
-![](static/giphy.gif)
+<p align="center" width="100%">
+    <img src="static/giphy.gif">
+</p>
 
 ## Licence
 
